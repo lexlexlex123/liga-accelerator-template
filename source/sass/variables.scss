@@ -16,6 +16,7 @@ $color-torch-red:                   #ff1553;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$blue-to-red:                       linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 
 // Typography
 // ---------------------------------
@@ -27,7 +28,7 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-placeholder:                    "robo", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -50,6 +51,8 @@ $vp-1024:                           1024px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
+
+$vp-1366:                           1366px;
 
 // Retina
 // ---------------------------------
