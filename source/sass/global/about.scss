@@ -1,0 +1,129 @@
+.about {
+  width: 100%;
+  max-width: 1920px;
+  display: grid;
+  grid-template-columns: 1fr 660px;
+  gap: 145px;
+  background-color: $color-default-white;
+  padding: 120px 103px 235px;
+  position: relative;
+
+
+  @include vp-1365 {
+    padding: 100px 45px 183px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+
+.about__text {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include vp-1365 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    align-items: start;
+    text-align: left;
+    padding: 0 15px;
+  }
+}
+
+.about__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 101px;
+
+
+}
+
+.about__def {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-default-darkblue;
+
+  @include vp-1365 {
+    padding: 36px 88px;
+  }
+
+  @include vp-767 {
+    padding: 40px 0 50px;
+  }
+}
+
+.about__def-invisible {
+  @include vp-1365 {
+    display: none;
+  }
+}
+
+.about__img {
+  width: 100%;
+}
+
+.about__video {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include vp-1365 {
+    bottom: 100px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    bottom: auto;
+    margin-top: 40px;
+  }
+}
+
+.about__video::before {
+  position: absolute;
+  background-color: rgba(20, 54, 122, 0.5);
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.about__video-img {
+  width: 100%;
+}
+
+.about__video-button {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  background: $red-to-blue;
+}
+
+.about__video-button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-top: calc(-50% - 15px);
+  margin-left: calc(-50% - 15px);
+  border: 1px solid #f00;
+  border-radius: 50%;
+}

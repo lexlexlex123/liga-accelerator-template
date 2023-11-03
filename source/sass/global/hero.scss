@@ -1,45 +1,45 @@
 .hero {
   width: 100%;
-  max-width: 1920px;
-  height: 730px;
+  max-width: 955px;
   display: flex;
-  background: $blue-to-red;
-
+  position: relative;
 
   @include vp-1365 {
-    height: 574px;
-  }
-
-  @include vp-767 {
-    height: 461px;
+    max-width: 678px;
   }
 }
 
 .hero__wrapper {
   display: flex;
+  width: 100%;
   gap: 70px;
-  padding: 86px 103px 120px;
+  padding: 0 0 120px;
 
   @include vp-1365 {
-    padding: 84px 45px 100px;
+    padding: 0 0 100px;
     gap: 30px;
   }
 
   @include vp-767 {
-    padding: 54px 15px 70px;
+    padding: 0 0 70px;
     gap: 15px;
   }
 }
 
 .hero__text {
   display: grid;
-  grid-template-columns: 113px 270px;
+  align-items: center;
+  grid-template-columns: 113px 1fr;
+  width: 100%;
 }
 
 .hero__list {
   grid-row: 1 / span 2;
   color: $color-default-white;
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   font-size: 14px;
   line-height: 22px;
 }
@@ -63,12 +63,16 @@
   background-color: transparent;
   border: 2px solid $color-default-white;
   color: $color-default-white;
-  width: 230px;
+  max-width: 230px;
+  width: 100%;
   height: 66px;
+  align-self: start;
+  justify-self: end;
 
   @include vp-767 {
     grid-column: 1 / span 2;
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -78,17 +82,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 92px;
-  line-height: 110px;
-  letter-spacing: 3%;
-  font-weight: 800;
   color: $color-default-white;
-  text-transform: uppercase;
-}
-
-.hero__state {
-  font-size: 54px;
-  line-height: 54px;
-  font-weight: 600;
-  letter-spacing: 5%;
+  font-family: $ff-header;
+  margin-top: 20px;
 }

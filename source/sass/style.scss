@@ -8,14 +8,19 @@
 // Global
 // ---------------------------------
 
+@import "global/fonts";
 @import "variables";
 @import "mixins";
-@import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
 @import "global/header";
 @import "global/hero";
+@import "global/about";
+@import "global/main";
+@import "global/price";
+@import "global/games";
+@import "global/features";
 
 // Blocks
 // ---------------------------------

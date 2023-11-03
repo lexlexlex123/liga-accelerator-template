@@ -5,6 +5,9 @@
 
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
+$color-default-grey:                #F8F9FC;
+$color-default-darkblue:            #102654;
+$color-default-darkblue-transparent05:          rgba(16, 38, 84, 0.5);
 $color-transparent:                 rgba(255, 255, 255, 0);
 
 // Project palette
@@ -17,6 +20,8 @@ $color-torch-red:                   #ff1553;
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $blue-to-red:                       linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+$red-to-blue:                       linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+
 
 // Typography
 // ---------------------------------
@@ -29,6 +34,7 @@ $fz-default:                        16px;
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
 $ff-placeholder:                    "robo", "Arial", sans-serif;
+$ff-header:                         "alumni", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

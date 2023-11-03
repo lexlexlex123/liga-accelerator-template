@@ -11,28 +11,208 @@
   <body>
     <div class="wrapper">
       <header class="header">
+        <div class="header__title">
           <span>SUPERGYM</span>
           <span>8-800-555-55-55</span>
-      </header>
-      <main>
-        <div class="hero">
-          <div class="hero__wrapper">
-            <div class="hero__text">
-              <div class="hero__list">
-                <span>Тренажёрный зал</span>
-                <span>Групповые занятия</span>
-                <span>Кардиозона</span>
-              </div>
-              <div class="hero__title">
-                <span class="hero__state">Омск</span>
-                <span>фитнес</span>
-                <span>центр</span>
-              </div>
-              <button type="button" class="hero__button">купить абонемент</button>
-            </div>
-            <img src="img/hero.jpg" width="500" height="524" class="hero__img">
-          </div>
         </div>
+          <section class="hero">
+            <div class="hero__wrapper">
+              <div class="hero__text">
+                <div class="hero__list">
+                  <span>Тренажёрный зал</span>
+                  <span>Групповые занятия</span>
+                  <span>Кардио-зона</span>
+                </div>
+                <div class="hero__title">
+                  <h3 class="h3 h3-white">ОМСК</h3>
+                  <h1 class="h1">фитнес</h1>
+                  <h1 class="h1">центр</h1>
+                </div>
+                <button type="button" class="hero__button">купить абонемент</button>
+              </div>
+              <img src="img/hero.jpg" width="500" height="524" class="hero__img">
+            </div>
+          </section>
+      </header>
+      <main class="main">
+        <section class="about">
+          <div class="about__text">
+            <div class="about__title">
+              <h3 class="h3">Тренажерный зал</h3>
+              <h6 class="h6">Просторный зал площадью 900 кв/м</h6>
+            </div>
+            <div class="about__def">
+              <span >Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</span>
+              <br>
+              <span class="about__def-invisible">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
+            </div>
+          </div>
+          <div>
+            <img src="img/about.jpg" width="660" height="401" class="about__img" alt="gim-photo">
+          </div>
+          <div class="about__video">
+            <img src="img/video.jpg" width="364" height="228" alt="video" class="about__video-img">
+            <button class="about__video-button" type="button" title="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
+                <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <section class="price">
+          <h3 class="h3">Абонементы</h3>
+          <ul class="price__term">
+            <li class="price__term-item price__term-select">1 месяц</li>
+            <li class="price__term-item">6 месяцев</li>
+            <li class="price__term-item">12 месяцев</li>
+          </ul>
+          <div class="price__cards">
+            <div class="price__card">
+              <h4 class="h4">С тренером</h4>
+              <span class="price__card-def">12 занятий</span>
+              <div class="price__card-price">
+                <span class="price__card-price-shadow">5000</span>
+                <span>5000</span><span>₽</span>
+              </div>
+              <button type="button" class="price__button">купить абонемент</button>
+            </div>
+            <div class="price__card price__card-accent">
+              <h4 class="h4">Дневной</h4>
+              <span class="price__card-def">с 8:00 до 17:00</span>
+              <div class="price__card-price">
+                <span class="price__card-price-shadow">1700</span>
+                <span>1700</span><span>₽</span>
+              </div>
+              <button type="button" class="price__button price__button-accent">купить абонемент</button>
+            </div>
+            <div class="price__card">
+              <h4 class="h4">Полный день</h4>
+              <span class="price__card-def">с 8:00 до 22:00</span>
+              <div class="price__card-price">
+                <span class="price__card-price-shadow">2700</span>
+                <span>2700</span><span>₽</span>
+              </div>
+              <button type="button" class="price__button">купить абонемент</button>
+            </div>
+            <img src="img/abonement.png" class="price__img">
+          </div>
+        </section>
+
+        <section class="games">
+          <div class="games__wrapper">
+            <div class="games__text"></div>
+            <img src="img/games.jpg" class="games__img" title="спортивный мужчина">
+          </div>
+          <h3 class="h3 games__title">Жюри</h3>
+          <ul class="games__slider">
+            <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="games__slider-left">
+              <path d="M17 1L0.999999 17L17 33"/>
+            </svg>
+            <li>
+              <div class="games__slider-img"><img src="img/juri1.jpg"><span class="h6 h6-white games__slider-img-name">Анна Павлова</span></div>
+              <div class="games__slider-def">
+                <h6 class="h6 h6-white">Анна Павлова</h6>
+                <span class="games__slider-trener">CrossFit</span>
+                <ul class="games__slider-trener-list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="games__slider-img"><img src="img/juri2.jpg"><span class="h6 h6-white games__slider-img-name">Алексей Лавров</span></div>
+              <div class="games__slider-def">
+                <h6 class="h6 h6-white">Алексей Лавров</h6>
+                <span class="games__slider-trener">CrossFit</span>
+                <ul class="games__slider-trener-list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="games__slider-img"><img src="img/juri3.jpg"><span class="h6 h6-white games__slider-img-name">Александр Пашков</span></div>
+              <div class="games__slider-def">
+                <h6 class="h6 h6-white">Александр Пашков</h6>
+                <span class="games__slider-trener">CrossFit</span>
+                <ul class="games__slider-trener-list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="games__slider-img"><img src="img/juri4.jpg"><span class="h6 h6-white games__slider-img-name">Мария Кетова</span></div>
+              <div class="games__slider-def">
+                <h6 class="h6 h6-white">Мария Кетова</h6>
+                <span class="games__slider-trener">CrossFit</span>
+                <ul class="games__slider-trener-list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="games__slider-right">
+              <path d="M1 1L17 17L1 33"/>
+            </svg>
+          </ul>
+        </section>
+
+        <section class="features">
+          <h3 class="h3">Наши преимущества</h3>
+          <div class="features__wrapper">
+            <div class="features__item">
+              <div class="features__item-number">
+                <span class="features__item-number-title">900</span>
+                <span class="features__item-number-def">кв/м</span>
+              </div>
+              <div class="features__item-text">
+                <span class="features__item-text-title">Площадь</span>
+                <span class="features__item-text-def">Занимайтесь без очередей и толкучки</span>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="features__item-number">
+                <span class="features__item-number-title">70</span>
+                <span class="features__item-number-def">машин</span>
+              </div>
+              <div class="features__item-text">
+                <span class="features__item-text-title">Собственная парковка</span>
+                <span class="features__item-text-def">Вы всегда найдете место для своей машины на нашей парковке</span>
+              </div>
+            </div>
+            <div class="features__center">
+              <span class="features__center-count">100</span>
+              <span class="features__center-title">Тренажеров</span>
+              <span class="features__center-text">Современные тренажеры на все группы мышц</span>
+            </div>
+            <div class="features__item">
+              <div class="features__item-number">
+                <span class="features__item-number-title">350</span>
+                <span class="features__item-number-def">мест</span>
+              </div>
+              <div class="features__item-text">
+                <span class="features__item-text-title">Комфорт</span>
+                <span class="features__item-text-def">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</span>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="features__item-number">
+                <span class="features__item-number-title">5+</span>
+                <span class="features__item-number-def">лет</span>
+              </div>
+              <div class="features__item-text">
+                <span class="features__item-text-title">Тренерский опыт</span>
+                <span class="features__item-text-def">Добивайтесь своих целей быстрее с профессиональным тренером</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="container"></div>

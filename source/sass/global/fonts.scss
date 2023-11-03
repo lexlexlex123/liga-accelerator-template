@@ -6,3 +6,39 @@
   font-display: swap;
   src: url("../fonts/robo.woff2") format("woff2");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "alumni";
+
+  font-display: swap;
+  src: url("../fonts/AlumniSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "alumni";
+
+  font-display: swap;
+  src: url("../fonts/AlumniSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "alumni";
+
+  font-display: swap;
+  src: url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "alumni";
+
+  font-display: swap;
+  src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2");
+}
