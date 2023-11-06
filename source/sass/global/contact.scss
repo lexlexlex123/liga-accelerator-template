@@ -1,0 +1,90 @@
+.contact {
+  display: flex;
+  width: 100%;
+
+  @include vp-1365 {
+    flex-direction: column;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $color-default-darkblue;
+  padding: 60px 103px;
+  width: 100%;
+  color: $color-default-white;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include vp-1365 {
+    padding: 100px 133px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
+}
+
+.contact__def {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $color-default-white;
+  padding: 60px 103px;
+  width: 100%;
+
+  @include vp-1365 {
+    padding: 100px 133px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
+}
+
+.contact__form-items {
+  margin-top: 33px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  width: 100%;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact__form-input {
+  border: none;
+  border-bottom: 1px solid #74819C;
+  height: 36px;
+  background-color: transparent;
+  color: $color-default-white;
+  outline: none;
+}
+
+.contact__form-input:focus {
+  border: 1px solid $color-default-white;
+  height: 36px;
+  background-color: transparent;
+  color: $color-default-white;
+}
+
+.contact__form-button {
+  grid-column: 1 / span 2;
+  height: 66px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-default-white;
+  color: $color-default-white;
+
+  @include vp-767 {
+    grid-column: 1 / 2;
+  }
+}

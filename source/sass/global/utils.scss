@@ -138,6 +138,25 @@
   }
 }
 
+.h5 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: $ff-placeholder;
+  color: $color-default-darkblue;
+
+  @include vp-1365 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .h6 {
   margin: 0;
   font-size: 22px;
