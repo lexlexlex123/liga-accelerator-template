@@ -39,3 +39,34 @@
     font-size: 22px;
   }
 }
+
+.header__title-tel {
+  color: $color-default-white;
+  position: relative;
+}
+
+.header__title-tel:hover {
+  color: #1C3374;
+}
+
+.header__title-tel:focus {
+  color: #1C3374;
+}
+
+.header__title-tel:active {
+  color: $color-default-darkblue;
+}
+
+.header__title-tel:active::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 1px solid $color-default-darkblue;
+}
+
+.header__title-tel[aria-disabled="true"] {
+  cursor: auto;
+  color: #F8F9FC;
+}

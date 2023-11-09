@@ -1,0 +1,124 @@
+.footer {
+  display: flex;
+  padding: 40px 103px;
+  color: $color-default-white;
+  background-color: #030A1A;
+  width: 100%;
+  justify-content: space-between;
+
+  @include vp-1365 {
+    padding: 45px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 15px 45px;
+  }
+}
+
+.footer__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 40px;
+
+
+  @include vp-1365 {
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  @include vp-767 {
+    column-gap: 35px;
+    margin-top: 30px;
+  }
+}
+
+.footer__menu-item {
+  cursor: pointer;
+  color: $color-default-white;
+  font-size: 14px;
+  line-height: 22px;
+  position: relative;
+  outline: none;
+}
+
+.footer__menu-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid $color-default-white;
+}
+
+.footer__menu-item:focus::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: -5px -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 10px);
+  border: 1px solid $color-default-white;
+  outline: none;
+}
+
+.footer__social {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-767 {
+    margin-top: 55px;
+    align-self: center;
+  }
+}
+
+.footer__social-item {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-default-white;
+  color: #030A1A;
+  cursor: pointer;
+}
+
+.footer__social-item li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social-item:hover {
+  background-color: #103AAE;
+  color: $color-default-white;
+}
+
+.footer__social-item:focus {
+  background-color: #103AAE;
+  color: $color-default-white;
+}
+
+.footer__social-item:active {
+  background-color: $color-default-darkblue;
+  color: $color-default-white;
+}
+
+.footer__social-item[aria-disabled="true"] {
+  background-color: $color-default-white;
+  opacity: 0.3;
+  color: #030A1A;
+  cursor: auto;
+}
+

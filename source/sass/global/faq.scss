@@ -27,6 +27,10 @@
   }
 }
 
+.faq__item {
+  cursor: pointer;
+}
+
 .faq__item input {
   display: none;
 }
@@ -107,6 +111,11 @@
   border-radius: 50%;
   border: 1px solid #1C3374;
   stroke: #1C3374;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .faq__minus {

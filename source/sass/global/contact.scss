@@ -88,3 +88,51 @@
     grid-column: 1 / 2;
   }
 }
+
+.contact__def-wrapper {
+  margin-top: 40px;
+  width: 100%;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: $color-default-darkblue;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact__def-text {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.contact__def-tel {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-default-darkblue;
+}
+
+.contact__def-left {
+  border-right: 1px solid #74819C;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include vp-767 {
+    border-right: none;
+  }
+}
+
+.contact__def-right {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+}
