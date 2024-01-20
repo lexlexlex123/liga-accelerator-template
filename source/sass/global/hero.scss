@@ -68,6 +68,7 @@
   height: 66px;
   align-self: start;
   justify-self: end;
+  cursor: pointer;
 
   @include vp-767 {
     grid-column: 1 / span 2;

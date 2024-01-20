@@ -483,9 +483,12 @@ button,
 
 .wrapper {
   position: relative;
+  width: 100%;
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -886,6 +889,7 @@ button,
       align-self: start;
   -ms-grid-column-align: end;
       justify-self: end;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .hero__button {
@@ -2546,6 +2550,7 @@ button,
           justify-content: center;
   border: 2px solid #ffffff;
   color: #ffffff;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .contact__form-button {

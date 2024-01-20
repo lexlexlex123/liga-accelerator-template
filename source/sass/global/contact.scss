@@ -83,6 +83,7 @@
   justify-content: center;
   border: 2px solid $color-default-white;
   color: $color-default-white;
+  cursor: pointer;
 
   @include vp-767 {
     grid-column: 1 / 2;
